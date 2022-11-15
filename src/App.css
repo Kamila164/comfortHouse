@@ -1,0 +1,39 @@
+
+.App{
+    margin: 0 auto;
+    padding: 0;
+    min-width: 320px;
+    max-width: 1350px;
+}
+.main-title{
+    font-size: 2rem;
+    color: #292929;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.border-title{
+    width: 90px;
+    border: 2px solid #092D5D;
+    margin-top: 15px;
+}
+@media screen and (max-width: 1345px){
+    .App{
+        margin: 0 auto;
+        padding: 0;
+        min-width: 320px;
+        max-width: 900px;
+    }
+
+}
+@media screen and (max-width: 710px){
+    .main-title{
+        font-size: x-large;
+    }
+
+}
+@media screen and (max-width: 400px){
+    .main-title{
+        font-size: 20px;
+    }
+}

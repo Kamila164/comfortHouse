@@ -1,0 +1,38 @@
+.youtube-link{
+    background-color: #FBFBFC;
+}
+.yt-content{
+    padding: 3rem 2rem;
+    gap: 2rem;
+
+}
+.yt-title{
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.yt-border{
+    margin: 15px auto;
+}
+.youtube-video{
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px){
+    .youtube-video{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 650px){
+    .youtube-link{
+        padding: 1rem 0 0;
+    }
+    .yt-content{
+        padding: 0 0 15px;
+    }
+    .yt-title{
+        margin: 20px 0;
+    }
+    .youtube-video{
+        height: 300px;
+    }
+}

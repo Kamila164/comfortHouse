@@ -1,0 +1,127 @@
+.about{
+    padding: 3rem 2rem;
+    background-color: #FBFBFC;
+}
+.about-container{
+    gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.left-a{
+    flex: 1;
+}
+.right-a{
+    flex: 1;
+}
+.about-desc{
+    margin-top: 6rem;
+}
+.about-desc>p{
+    font-size: 	1.125rem;
+    line-height: 2;
+}
+.upper{
+    text-transform: uppercase;
+    font-size: 	1.25rem;
+}
+.about-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+.about-block{
+    display: flex;
+    width: 10.999rem;
+    padding-bottom: 50px;
+}
+.about-list-title{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.about-icon{
+    width: 2.3125rem;
+    height: 2.6rem;
+}
+.about-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1024px){
+    .about-container{
+        flex-direction: column;
+    }
+    .about-desc, .about-list{
+        margin-top: 3rem;
+    }   
+    .about-desc{
+        text-align: center;
+    }
+    .left-a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-list{
+        width: 70%;
+    }
+    .about-block{
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 835px){
+    .about-list{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 550px){
+    .about-list{
+        width: 100%;
+    }
+    .about-block{
+        margin: 0 10px;
+    }
+    .about-desc>p{
+        font-size: 	1rem;
+        line-height: 1.5;
+    }
+}
+@media screen and (max-width: 472px){
+    .about{
+        padding: 0;
+    }
+    .about-container{
+        display: block;
+    }
+    .about-desc, .about-list{
+        margin-top: 10px;
+    } 
+    .about-desc>p{
+        font-size: 15px;
+    }
+    .about-title, .left-a{
+        padding: 20px 20px 0;
+    }
+    .about-list{
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .about-icon{
+        width: 2rem;
+        height: 2rem;
+    }
+    .about-list-title{
+        font-size: 12px;
+    }
+    .about-block{
+        margin: 0 ;
+        width: 47%;
+    }
+    
+    
+}

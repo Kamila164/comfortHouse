@@ -1,0 +1,107 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 3.4375rem;
+    height: 4.75rem;
+}
+.header-menu{
+    list-style: none;
+    display: flex;
+    color: #292929;
+    padding-inline-start: 0px;
+}
+.header-menu>li{
+    cursor: pointer;
+    margin: 1.8rem 10px 0; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 0;
+}
+.header-menu>li:hover{
+    color: #004AAD;
+}
+.header>span{
+    margin-top: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #292929;
+}
+.menu-icon{
+    width: 1.675rem;
+    height: 1.675rem;
+    display: none;
+}
+.mobile-social{
+    display: none;
+}
+.header-menu-mobile{
+    display: none;
+}
+@media screen and (max-width: 1200px){
+    .header-menu>li, .header>span{
+        font-size: small;
+        font-weight: 600;
+    }   
+}
+@media screen and (max-width: 1000px){
+    .header>span{
+        font-size: 0;
+    } 
+}
+@media screen and (max-width: 880px){
+    .header{
+        display: block;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    .logo{
+        margin: 10px 15px;
+    }
+    .header-menu{
+        display: none;
+    }
+    .header-menu-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: #fff;
+        color: #292929;
+        height: 50vh;
+        width: 100%;
+        padding-left: 15px;
+        padding-top: 0;
+        transition: all 0.5s ease-out;
+        right: 0;
+        top: 100px;
+    }
+    .header-menu-mobile>li{
+        margin: 15px 0;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+    }
+    .header-menu-mobile>li:hover{
+        color: #004AAD;
+    }
+    .menu-icon{
+        display: block;
+        position: absolute;
+        right: 2rem;
+        top: 30px;
+        cursor: pointer;
+    }
+    .mobile-social{
+        display: flex;
+        justify-content: center;
+    }
+    .mobile-btn{
+        margin: 20px 10px;
+        width: 	1.700rem;
+        height: 1.700rem;
+    }
+}

@@ -1,0 +1,132 @@
+.location{
+    padding: 3rem 2rem;
+    gap: 2rem;
+    background-color: #FBFBFC;
+}
+.location-container{
+    display: flex;
+    justify-content: space-between;
+}
+.location-desc{
+    width: 47rem;
+    margin-top: 35px;
+    line-height: 2;
+}
+.location-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.location-block{
+    display: flex;
+    margin-bottom: 40px;
+}
+.location-address-icon{
+    border: 1px solid #292929;
+    padding: 15px 20px;
+    margin-right: 20px;
+    height: 4.0625rem;
+}
+.location-icon{
+    width: 1.8125rem;
+}
+.location-address-text>h5{
+    text-transform: uppercase;
+    color: #292929;
+    font-size: 1rem;
+    margin-bottom: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.location-address-text>a{
+    font-size: 0.875rem;
+    color: #292929;
+    padding-bottom: 4px;
+}
+.l-map{
+    overflow: hidden;
+}
+.l-map>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1024px){
+    .location-container{
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .location-right{
+        flex-direction: row;
+        margin-top: 40px;
+    }
+    .location-block{
+        align-items: center;
+        margin-right: 90px;
+    }
+    .location-desc{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 800px){
+    .location-address-icon{
+        border: none;
+        padding: 0;
+        margin-right: 15px;
+        height: 4.0625rem;
+    }
+    .location-right{
+        width: 100%;
+        margin-top: 20px;
+        justify-content: space-around;
+    }
+    .location-block{
+        align-items: start;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 614px){
+    .location{
+        padding: 2rem 15px 3rem;
+    }
+    .location-address-text>h5, 
+    .location-address-text>a, 
+    .location-address-text>p{
+        font-size: 14px;
+    }
+    .location-address-icon{
+        display: none;
+    }
+    .location-icon{
+        display: none;
+    }
+    .location-desc{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 500px){
+    .location{
+        padding: 0 0 1rem;
+    }
+    .location-title{
+        padding: 20px 0 0 20px;
+    }
+    .location-desc{
+        display: none;
+    }
+    .location-address-text>h5, 
+    .location-address-text>a, 
+    .location-address-text>p{
+        font-size: 11px;
+    }
+    .location-right{
+        width: 100%;
+        margin: 20px 16px 0;
+        justify-content: start;
+    }
+    .location-block{
+        margin-right: 25px;
+    }
+}
